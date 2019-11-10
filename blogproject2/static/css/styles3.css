@@ -1,13 +1,14 @@
 body {
     background: blue;
     background-image: url("../images/top.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
 h1 {
     color: blue;
     font-size: 60pt;
-    background: green;
+    background: red;
 }
 
 p {

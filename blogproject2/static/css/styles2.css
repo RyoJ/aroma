@@ -1,3 +1,22 @@
+body {
+    background: blue;
+    background-image: url("../images/top.jpg");
+    background-repeat: ;
+    background-size: cover;
+}
+
 h1 {
     color: blue;
+    font-size: 60pt;
+    background: lightgreen;
+}
+
+p {
+    color: red;
+    font-size: 40pt;
+    background: lightblue;
+}
+
+a {
+    background: lightgreen;
 }

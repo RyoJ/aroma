@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView, ListView, CreateView
+from django.utils import timezone
 
 from .models import Article
 from .forms import ArticleForm
@@ -14,6 +15,8 @@ class ArticleCreatetView(TemplateView):
 class ArticleListView(ListView):
     template_name = "articles/articles_list.html"
     model = Article
+    def get_queryset(self):
+        return Article.objects.order_by('-id')
 
 class ArticleCreatetView(CreateView):
     template_name = "articles/articles_create.html"
